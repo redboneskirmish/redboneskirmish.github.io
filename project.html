@@ -1,0 +1,300 @@
+<!DOCTYPE HTML>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Testing page</title>
+    <link rel="stylesheet" href="C:\Users\ilogi\Desktop\project\projectStyle.css">
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+        function drop(ev) {
+            ev.preventDefault();
+            let data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
+</head>
+
+<body>
+
+    <header align="center">
+        <h1 style="cursor:crosshair">Testing page</h1>
+        <br>
+    </header>
+
+    <nav id="listOfContents">
+        <h2 style="margin-left: 10px;">List of contents.</h2>
+        <ul class="navigationList">
+            <li><a id="navLink" href="#aboutMe">About me</a></li>
+            <li><a id="navLink" href="#attachedMedia">Attached media</a></li>
+            <li><a id="navLink" href="#table">Table</a></li>
+            <li><a id="navLink" href="#progressBars">Progress bars</a></li>
+            <li><a id="navLink" href="#inputFields">Input fields</a></li>
+            <li><a id="navLink" href="#graphicsAndAnimations">Graphics and animations</a></li>
+            <li><a id="navLink" href="#dragAndDrop">Drag & Drop API</a></li>
+        </ul>
+    </nav>
+
+    <article align="center" id="aboutMe">
+        <h1 id="whoAmI">Who am I?</h1>
+        <p id="whoAmI">I am currently an IT student in aero-cosmic engineering university, the discipline is called
+            "Design and IT-engineering".<br><br>
+        Although I'm 22, I'm only on my second (out of 4) year of studying atm since before 
+            engaging into IT I've spent 3 years on learning civil engineering which as the time passed
+            I realised was not what I want to do in my life so I had to change my discipline
+            half-way through.<br><br>
+        I realized that what I really want to do is programming since I 
+            always liked all them algorithmes (never was good with them tho) and also since software developer 
+            is one of the best jobs available on the job market currently. I think the demand for 
+            programmers will grow with every year cause our future is written in code.
+            <br><br>
+        So I started a new 4-year education program on IT and web design. But it actually doesn't 
+            give me actual skills yet and I figured that being a good programmer requires not only 
+            a unibersity degree, but also a fair amount of self-education. So recently, in the middle 
+            of October 2019 I searched the web, found a sphere I want to work with (web development) 
+            and started actually accumulating required skills, starting with HTML.
+            <br><br>
+        I already finshed the <i>sololearn.com</i> course on HTML basics and now I'm creating this page 
+        using the information I gathered. It's only HTML now, but I will update it with design 
+        and interactions as soon as I learn the basics of CSS and JavaScript.</p>
+        <p style="font-family:cursive">Edit: I'm now learning CSS and adding it to this code.</p>
+        <div id="overflow">
+            This is a text contained inside the div with the owerflow property and the value
+            of scroll so it's displayed inside it's special box with scrolling feature. <br>
+            Text text Text text Text text Text text Text text Text text Text text 
+            Text text Text text Text text Text text Text text Text text Text text Text text Text text 
+            Text text Text text Text text Text text Text text Text text Text text Text text Text text Text 
+            text Text text Text text Text text Text text Text text Text text Text text Text text Text text 
+            Text text Text text Text text Text text Text text Text text Text text Text text Text text Text 
+            text Text text Text text Text text Text text Text text text Text text Text text Text text 
+            Text text Text text Text text Text text Text text Text text Text text Text text Text text 
+            Text text Text text Text text Text text Text text Text text Text text Text text Text text Text 
+            text Text text Text text Text text Text text Text text Text text Text text Text text Text text 
+            Text text Text text Text text Text text Text text Text text Text text Text text Text text Text 
+            text Text text Text text Text text Text text Text text
+        </div>
+        <br>
+        <div id="divForCircle"></div>
+        <p><i>this is a circle made with just one HTML div</i></p>
+        <br>
+        <p align="left"><img id="picFloat" src="C:\Users\ilogi\Desktop\project\stewie.jpg" /><img id="picFloat2" src="C:\Users\ilogi\Desktop\project\stewie.jpg" />
+            Text text Text text Text text Text text Text text Text text Text text 
+            Text text Text text Text text Text text Text text Text text Text text Text text Text text 
+            Text text Text text Text text Text text Text text Text text Text text Text text Text text Text 
+            text Text text Text text Text text Text text Text text Text text Text text Text text Text text 
+            Text text Text text Text text Text text Text text Text text Text text Text text Text text Text 
+            text Text text Text text Text text Text text Text text text Text text Text text Text text 
+            Text text Text text Text text Text text Text text Text text Text text Text text Text text 
+            Text text Text text Text text Text text Text text Text text Text text Text text Text text Text 
+            text Text text Text text Text text Text text Text text Text text Text text Text text Text text 
+            Text text Text text Text text Text text Text text Text text Text text Text text Text text Text 
+            text Text text Text text Text text Text text Text text</p>
+        <br>
+    </article>
+
+    <article align="center" id="attachedMedia">
+        <h1>
+            Below is the part dedicated to using the media content on the web page 
+            so I'm going to place some images and audio/video files.
+        </h1>
+        <br>
+        <p>However none of them will be visible here on SoloLearn since all the files are
+            stored on my PC lmao.
+        </p>
+        <br>
+        <audio src="C:/Users/ilogi/Desktop/project/recording.m4a" controls>
+            Audio element not supported by your browser.
+        </audio>
+        <p>This is an audio I made with my laptop embedded voice recorder. <br> If you set it to maximum 
+            volume you'll be able to hear the quiet music lol.
+        </p>
+        <br>
+        <video height="250px" width="450px" src="C:/Users/ilogi/Desktop/project/WIN_20191108_13_00_44_Pro.mp4" controls>
+            Video is not supported by your browser.
+        </video>
+        <p>This is a video which has controls, but in which nothing happens.
+        </p>
+        <br>
+        <img height="250px" width="450px" src="C:/Users/ilogi/Desktop/project/WIN_20191108_13_00_36_Pro.jpg">
+        <p>This is a very low quality photo of me made with shitty laptop webcam.</p>
+        <br>
+    </article>
+
+    <article align="center" id="table">
+        <h1>This is the table showing the languages I'm interested in.</h1>
+        <br>
+        <table align="center" border="2">
+            <caption>Languages</caption>
+            <th>
+                <td bgcolor="grey">How is used</td>
+                <td bgcolor="grey">My progress</td>
+            </th>
+            <tr>
+                <td bgcolor="lightBlue">HTML</td>
+                <td>Used to mark-up a page</td>
+                <td>I learned the basics and started using them in the project you now see.
+                    Everything on this page is made with HTML.
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="red">CSS</td>
+                <td>Used to add a visual style to the document made with HTML</td>
+                <td>I'm planning on starting learning it as soon as I finish this project.</td>
+            </tr>
+            <tr>
+                <td bgcolor="yellow">JavaScript</td>
+                <td>Used to add user interactions to the document</td>
+                <td>3rd and the most important point on my languages list.</td>
+            </tr>
+        </table>
+        <br>
+    </article>
+
+    <article align="center" id="progressBars">
+        <br>
+        <h1>Here goes the progress bar showing how good I know these
+            languages as for now. Not very good yet tho.
+        </h1>
+        <p>HTML: <progress value="0.75"></progress></p>
+        <p>CSS:  <progress value="0.6"></progress></p>
+        <p>JS:   <progress value="0.2"></progress></p>
+        <br>
+    </article>
+
+    <article align="center" id="inputFields">
+        <h1>Here go all the various input fields for user to interact with.
+        </h1>
+        <section>
+            <br>
+            <form action="#attachedMedia">
+                <p>Enter your username and password:
+                </p>
+                    <input type="text">
+                <br>
+                <br>
+                    <input type="password">
+                <br>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+            <p><i>This is made using "input" element with "type" attribute's values "text",  <br> 
+                "password" and "submit" which lets you to input username and password.
+            </i></p>
+        <br>
+        </section>
+        <section>
+            <br>
+            <p>Select your gender:</p>
+            <form action="#attachedMedia">        
+                <input type="radio" name="select your gender" value="Male"> Male
+                <input type="radio" name="select your gender" value="Female"> Female
+                <input type="radio" name="select your gender" value="Prefer not to answer"> Prefer not to answer
+                <br>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+            <p><i>This is made using "input" element with "type" attribute's value "radio" <br>
+                which lets you to choose only 1 answer out of few options.
+            </i></p>
+            <br>
+        </section>
+        <section>
+            <br>
+            <p>Which languages do you know?</p>
+            <form>
+                <input type="checkbox" name="Which languages do you know?" value="HTML"> HTML
+                <input type="checkbox" name="Which languages do you know?" value="CSS"> CSS
+                <input type="checkbox" name="Which languages do you know?" value="JavaScript"> JavaScript
+                <br>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+            <p><i>This is made using "input" element with "type" attribute's value "checkbox" <br>
+                which lets you to choose several answers out of few options.
+            </i></p>
+            <br>
+        </section>
+    </article>
+
+    <article align="center" id="graphicsAndAnimations">
+        <br>
+        <h1>Here I will work with SVG (Scalable Vector Graphics) shapes</h1>
+        <svg height="50%" width="70%">
+            <circle cx="450" cy="60" r="50" style="fill:darkolivegreen; stroke:black; stroke-width:5">
+        </svg>
+        <p><i>circle</i></p>
+        <svg height="50%" width="70%">
+            <rect width="100" height="100" x="400" y="30" style="fill:darkolivegreen; stroke:black; stroke-width:5">
+        </svg>
+        <p><i>rectangle</i></p>
+        <svg width="400" height="100">
+            <line x1="50" y1="50" x2="300" y2="100" style="stroke:black">
+        </svg>
+        <p><i>line</i></p>
+        <svg height="50%" width="70%">
+            <polygon points="400 50, 450 100, 600 0, 310 29" style="fill:darkolivegreen; stroke:black; stroke-width:2">
+        </svg>
+        <p><i>polygon</i></p>
+        <br>
+        <h1>And also with animations!</h1>
+        <svg width="1000" height="200">
+            	<rect width="150" height="90" style="fill:darkolivegreen; stroke:black; stroke-width:2">
+                    <animate attributeName="y" from="-200" to="200" dur="2s" repeatCount="indefinite">
+                </rect>
+        </svg>
+        <svg width="1000" height="200">
+            <rect width="150" height="90" style="fill:darkolivegreen; stroke:black; stroke-width:2">
+                <animate attributeName="x" from="0" to="600" dur="4s" repeatCount="indefinite"> 
+            </rect>
+        </svg>
+    </article>
+
+    <div align="center">
+        <h1>Buttons!</h1>
+        <button type="button">
+            Click Me!
+        </button>
+        <br><br>
+        <button type="submit">
+            Submit
+        </button>
+        <br><br>
+        <button type="menu">
+            Menu?
+        </button>
+    </div>
+
+    <article align="center" id="dragAndDrop">
+        <h1>And finally, infamous Drag & Drop API</h1>
+        <p id="lineThrough"><i>damn this shit is real hard</i></p>
+        <section id="section1" ondrop="drop(event)" ondragover=allowDrop(event)>
+    </section>
+        <img id="drag1" height="120px" width="180px" src="C:/Users/ilogi/Desktop/project/stewie.jpg"
+        draggable="true" 
+        ondragstart="drag(event)">
+        <br>
+    </article>
+
+    <article align="center">
+        <br>
+        <h1>So that's it.</h1>
+        <p>That's where this document ends. For now. I'll be now moving
+                towards CSS and will come back here after I know the CSS basics so 
+                I can design my document.</p>       
+    </article>
+
+    <footer align="center">
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
+        <p><b>Made with Visual Studio Code</b></p>
+        <p><b>October, 2019 - eternity</b></p>
+    </footer>
+
+</body>
