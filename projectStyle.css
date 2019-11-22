@@ -15,14 +15,6 @@ h1 {
     border-radius: 5px;
 }
 
-#profilePicture {
-    margin-left: 1%;
-    margin-top: 1%;
-    max-height: 10%;
-    max-width: 10%;
-    transform: scale(0.6);
-}
-
 .nav {
     width: 8%;
     position: fixed;
