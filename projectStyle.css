@@ -1,106 +1,50 @@
-#section1 {
-    width: 180px;
-    height: 120px;
-    padding: 10px;
-    border: 1px solid black;
-}
-
-ul.navigationList {
-    list-style-type: square;
-    list-style-position: outside;
-}
-
-#navLink {
-    cursor: pointer;
-}
-
-#navLink:link {
-    text-decoration: none;
-}
-
-#navLink:hover {
-    color:darkolivegreen;
-    font-family: cursive;
-}
-
-#navLink:active {
-    color:red;
-}
-
-table {
-    border-collapse: collapse;
-    caption-side: bottom;
-    empty-cells: hide;
-    table-layout: auto;
-}
-
-#drag1 {
-    cursor: move;
-}
-
 body {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #acc3be;
     text-align: center;
-    font-size: normal;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-#listOfContents {
-    height: 100%;
-    width: 40%;
-    margin-left: 30%;
-    text-align: left;
-    text-decoration: none;
-    border: 5px dashed darkolivegreen;
-    border-radius: 24px;
-    -webkit-border-radius: 24px;
+    font-size: 110%;
 }
 
 h1 {
     font-size: 180%;
-    color: black;
-    background-color: darkolivegreen;
+    color: lightgrey;
+    background-color: #0e3735;
     font-family: sans-serif;
     font-variant: small-caps;
+    border-radius: 5px;
 }
 
-#lineThrough {
-    text-decoration: line-through;
+#profilePicture {
+    margin-left: 1%;
+    margin-top: 1%;
+    max-height: 10%;
+    max-width: 10%;
+    transform: scale(0.6);
 }
 
-#picFloat {
-    float: left;
-    width:15%; 
-    height:80px;
-    margin: 0 20px 0 0;
+.nav {
+    width: 8%;
+    position: fixed;
+    right: 5%;
+    top: 10%;
+    background-color: #4a5b5e;
+    text-decoration: none;
+    text-align: center;
+    color: white;
 }
 
-#picFloat2 {
-    float: right;
-    width: 15%;
-    height: 80px;
-    margin-left: 20px;
+.nav a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    font-size: 110%;
 }
 
-#overflow {
-    margin-left: 30%;
-    background-color: lightgreen;
-    height: 200px;
-    width: 40%;
-    overflow: scroll;
-}
-
-#whoAmI {
-    margin-left: 25%;
-    width: 50%;
-    background-color: lightgrey;
-    border: 3px solid darkolivegreen;
-    border-radius: 10px;
-}
-
-#divForCircle {
-    margin-left: 42%;
-    height: 200px;
-    width: 200px;
-    background-color: darksalmon;
-    border-radius: 100px;
+.nav a:hover {
+    background-color: #071e22;
+    color: lightgrey;
+    transform: scale(1.05, 1.05);
 }
