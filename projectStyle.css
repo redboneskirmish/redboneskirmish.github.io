@@ -1,6 +1,6 @@
 body {
-    width: 70%;
     margin: 0 auto;
+    width: 70%;
     background-color: #acc3be;
     text-align: center;
     font-size: 110%;
@@ -39,4 +39,44 @@ h1 {
     background-color: #071e22;
     color: lightgrey;
     transform: scale(1.05, 1.05);
+}
+
+#profilePicture {
+    margin-left: 5%;
+    height: 10%;
+    width: 20%;
+}
+
+#aboutMe {
+    background-color: lightgrey;
+}
+
+#attachedMedia {
+    background-color: #acc3be;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+#aboutMeShort {
+    padding: 1%;
+    width: 30%;
+    margin-left: 5%;
+    text-align: left;
+    background: rgba(14, 55, 53, 0.15);
+    box-shadow: 5px 5px 5px #888888;
+}
+
+#aboutMeExtended {
+    padding: 1%;
+    width: 50%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    background: rgba(14, 55, 53, 0.15);
+    box-shadow: 5px 5px 5px #888888;
 }
