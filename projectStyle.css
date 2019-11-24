@@ -50,10 +50,12 @@ h1 {
 
 #aboutMe {
     background-color: lightgrey;
+    height: 100vh;
 }
 
 #attachedMedia {
-    background-color: #acc3be;
+    background-color: lightgrey;
+    height: 100vh;
 }
 
 .container {
@@ -61,6 +63,7 @@ h1 {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin-top: 8%;
 }
 
 #aboutMeShort {
@@ -84,4 +87,8 @@ h1 {
 
 #optionName {
     background: rgba(14, 55, 53, 0.2);
+}
+
+.amsP {
+    line-height: 20px;
 }
