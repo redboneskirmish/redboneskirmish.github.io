@@ -5,15 +5,31 @@ body {
     background-color: #acc3be;
     text-align: center;
     font-size: 110%;
+    font-family: sans-serif;
 }
 
 h1 {
     font-size: 180%;
-    color: lightgrey;
-    background-color: #0e3735;
+    color: #037971;
     font-family: sans-serif;
     font-variant: small-caps;
-    border-radius: 5px;
+    margin-top: 2%;
+    font-size: 275%;
+    font-weight: 300;
+    margin-bottom: 2%;
+}
+
+#h1Addition {
+    color: #727878;
+    font-family: sans-serif;
+    font-variant: small-caps;
+    font-size: 21px;
+}
+
+h2 {
+    color: #037971;
+    font-family: sans-serif;
+    font-variant: small-caps;
 }
 
 .nav {
@@ -42,15 +58,15 @@ h1 {
     transform: scale(1.05, 1.05);
 }
 
-#profilePicture {
-    margin-left: 5%;
-    height: 10%;
-    width: 20%;
-}
-
-#aboutMe {
+#profile {
     background-color: lightgrey;
     height: 100vh;
+}
+
+#profileEnding {
+    font-family:sans-serif; 
+    font-size:100%;
+    color: #100621;
 }
 
 #attachedMedia {
@@ -63,30 +79,41 @@ h1 {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-top: 8%;
+    margin-top: 1px;
+    font-size: 90%;
 }
 
-#aboutMeShort {
+#aboutMe {
     padding: 1%;
+    width: 40%;
+    margin-left: 3%;
+    margin-right: 3%;
+    text-align: left;
+}
+
+#profilePicture {
+    height: 30%;
     width: 30%;
-    margin-left: 5%;
-    text-align: center;
-    background: rgba(14, 55, 53, 0.15);
-    box-shadow: 5px 5px 5px #888888;
 }
 
-#aboutMeExtended {
+#details {
     padding: 1%;
-    width: 50%;
-    margin-left: 5%;
-    margin-right: 5%;
-    text-align: center;
-    background: rgba(14, 55, 53, 0.15);
-    box-shadow: 5px 5px 5px #888888;
+    width: 40%;
+    margin-left: 3%;
+    margin-right: 3%;
+    text-align: left;
 }
 
 #optionName {
-    background: rgba(14, 55, 53, 0.2);
+    font-size: normal;
+    font-weight: bold;
+    margin-top: 0.1%;
+    margin-bottom: 0.1%;
+}
+
+#option {
+    margin-top: 0.1%;
+    margin-bottom: 3%;
 }
 
 .amsP {
