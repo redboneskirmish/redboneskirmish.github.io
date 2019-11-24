@@ -4,52 +4,50 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Interactive resume</title>
+    <title>Ivan Loginov - Interactive resume</title>
     <link rel="stylesheet" href="projectStyle.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Interactive resume</h1>
-    </header>
-
     <nav class="nav">
-        <a id="navLink" href="#aboutMe">About me</a>
-        <a id="navLink" href="#attachedMedia">Media</a>
-        <a id="navLink" href="#progressBars">Progress</a>
-        <a id="navLink" href="#inputFields">Input</a>
-        <a id="navLink" href="#graphicsAndAnimations">Graphics</a>
+        <a id="navLink" href="#profile">Profile</a>
+        <a id="navLink" href="#attachedMedia">Skills</a>
+        <a id="navLink" href="#progressBars">Experience</a>
+        <a id="navLink" href="#inputFields">Portfolio</a>
+        <a id="navLink" href="#graphicsAndAnimations">Contacts</a>
     </nav>
 
-    <div id="aboutMe">
-        <h1>About me</h1>
+    <div id="profile">
+        <p style="color:lightgrey">ss</p>  <!--an invisible paragrpah so the profileDiv background goes all the way up-->
+        <h1>Profile</h1>
+        <p id="h1Addition">I'm a beginner web developer</p>
+        <br>
+        <hr style="width:90%">
         <div class="container">
+            <div id="aboutMe">
+                <h2>About me</h2>
+                <p>I am a beginner web developer just in the start of my way. I am currently an IT student on 
+                    my secod year. I love structure and order and I also stand for quality. I love spending 
+                    time on fixing little details and optimizing web apps. I'm looking forward to further 
+                    advance my knowledge in web development and get a job as a programmer ASAP.
+                </p>
+                </div>
                 <img src="profilePicture.png" id="profilePicture">
-                <div id="aboutMeShort">
-                        <p class="amsP" id="optionName">Name</p> 
-                        <p class="amsP">Ivan Loginov</p>
-                        <p class="amsP" id="optionName">Age</p>
-                        <p class="amsP">22</p>
-                        <p class="amsP" id="optionName">Location</p>
-                        <p class="amsP">Saint Petersburg, Russia</p>
-                        <p class="amsP" id="optionName">Skills</p>
-                        <p class="amsP">HTML, CSS, JS basics</p>
-                </div>
-                <div id="aboutMeExtended">
-                        <p id="optionName">Who am I?</p>
-                        <p>I am currently a second year IT student and a self-taught web developer.
-                           My coding story began in September 2018, but I started an actual
-                           coding learning only in October 2019 - as soon as I realised academical
-                           university learning can't give much untill I start to learn some stuff myself.
-                        </p>
-                        <p>Since then I've fallen in love with code and now I spend a lot of my time on
-                           going deeper and deeper into coding. Daily. The domain I've chosen is web
-                           development and I've already learnt the basics of HTML & CSS (the page you now
-                           see is the result which I'm kinda proud of).
-                        </p>
-                </div>
+                <div id="details">
+                    <h2>Details</h2>
+                    <p class="amsP" id="optionName">Name:</p> 
+                    <p class="amsP" id="option">Ivan Loginov</p>
+                    <p class="amsP" id="optionName">Age:</p>
+                    <p class="amsP" id="option">22 years</p>
+                    <p class="amsP" id="optionName">Location:</p>
+                    <p class="amsP" id="option">Saint Petersburg, Russia</p>
+                    </div>
         </div>
+        <br><br>
+        <p id="profileEnding">Like the resume? Want me to help you create a website for your company or for yourself?
+           Be sure to contact me!
+        </p>
     </div>
 
     <div id="attachedMedia">
