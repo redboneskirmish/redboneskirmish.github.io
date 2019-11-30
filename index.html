@@ -4,8 +4,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Ivan Loginov - Interactive resume</title>
+    <title>Ivan Loginov | Resume</title>
     <link rel="stylesheet" href="projectStyle.css">
+    <link rel="icon" href="profilePicture.png">
 </head>
 
 <body>
@@ -18,7 +19,7 @@
         <a id="navLink" href="#contacts">Contacts</a>
     </nav>
 
-    <section id="profile">
+    <section class="mainSection" id="profile">
         <p style="color:lightgrey">ss</p>  <!--an invisible paragrpah so the profileDiv background goes all the way up-->
         <h1>Profile</h1>
         <p id="h1Addition">I'm a beginner web developer</p>
@@ -51,7 +52,7 @@
         </p>
     </section>
 
-    <section id="skills">
+    <section class="mainSection" id="skills">
         <p style="color:lightgrey">ss</p>  <!--an invisible paragrpah so the profileDiv background goes all the way up-->
         <h1>Skills</h1>
         <p id="h1Addition">“Any fool can know. The point is to understand.”<br>― Albert Einstein</p>
@@ -83,6 +84,125 @@
             This resume has been made using HTML and CSS.
         </p>
     </section>
+
+    <section class="mainSection" id="experience">
+        <p style="color:lightgrey">ss</p>  <!--an invisible paragrpah so the profileDiv background goes all the way up-->
+        <h1>Expirience</h1>
+        <p id="h1Addition">“Failure is the condiment that gives success its flavor”</p>
+        <br>
+        <hr style="width:90%">
+        <h2 style="text-align:left; margin-left:12%;">Education</h2>
+        <div class="container3">
+            <div id="edPoint">
+                <h3 id="expName">SUAI university</h3>
+                <p id="expExtended">Sep 2018 - June 2022</p>
+            </div>
+            <div id="edPoint2">
+                <h3>IT Bachelor</h3>
+                <p id="expExtended">Currently on my second year. The education is wide-profile 
+                    including numerous languages (C++, C#, Visual Basic, etc.), various
+                    IT-related disciplines and more. During my time in college, I'm focusing
+                    on web development.</p>
+                <p style="color: #037971;" id="expExtended"><img id="geoIcon" src="geoIcon.png"> Saint Petersburg, Russia</p>
+            </div>
+        </div>
+        <div class="container3">
+            <div id="edPoint">
+                <h3 id="expName">Perm Liceum 4</h3>
+                <p id="expExtended">Sep 2013 - June 2015</p>
+            </div>
+            <div id="edPoint2">
+                <h3>Highschool</h3>
+                <p id="expExtended">I graduated highschool, where I enjoyed doing imformation technologies,
+                    math and languages (Russian & English). On my final year of school I
+                    realized that I wanted to do something with websites, and so I started 
+                    making small HTML mark-ups and enjoyed that.</p>
+                <p style="color: #037971;" id="expExtended"><img id="geoIcon" src="geoIcon.png"> Perm, Russia</p>
+            </div>
+        </div>
+        <h2 style="text-align:left; margin-left:12%;">Career</h2>
+        <div class="container3">
+            <div id="edPoint">
+                <h3 id="expName">Looking to get hired!</h3>
+                <p id="expExtended">Currently</p>
+            </div>
+            <div id="edPoint2">
+                <h3>Any webdev project/company</h3>
+                <p id="expExtended">I'm advancing my programming (and web development in
+                    particular) skills on a daily basis and getting another step
+                    closer to my goal with every day. Be sure to hit me up
+                    if you have any suggestions!</p>
+                <p style="color: #037971;" id="expExtended"><img id="geoIcon" src="geoIcon.png"> Planet Earth</p>
+            </div>
+        </div>
+        <br>
+    </section>
+
+    <section class="mainSection" id="portfolio">
+        <p style="color:lightgrey">ss</p>  <!--an invisible paragrpah so the profileDiv background goes all the way up-->
+        <h1>Portfolio</h1>
+        <p id="h1Addition">“You can do anything you set your mind to.”<br>- Benjamin Franklin</p>
+        <br>
+        <hr style="width:90%">
+        <br>
+
+        <div class="myProjects">
+            <div class="gridItem gridLeftSide project1-1"></div>
+            <div class="gridItem gridRightSide project1-2"></div>
+            <div class="gridItem gridLeftSide project2-1"></div>
+            <div class="gridItem gridRightSide project2-2"></div>
+        </div>
+        
+    </section>
+
+    <section class="mainSection" id="contacts">
+        <p style="color:lightgrey">ss</p>  <!--an invisible paragrpah so the profileDiv background goes all the way up-->
+        <h1>Contacts</h1>
+        <p id="h1Addition">“If I had asked people what they wanted, they would have 
+            said faster horses.”<br>- Henry Ford</p>
+        <br>
+        <hr style="width:90%">
+        <br>
+        <div class="contactsList">
+            <ul style="list-style-type: none">
+                <li class="contactsListItem"><p class="eMail">
+                        <img class="icon" src="mailIcon.png">
+                        <a class="contactsLink" target="_blank" href="https://redboneskirmish@gmail.com"> e-mail me</a>
+                    </p>
+                </li>
+                <li class="contactsListItem">
+                    <p class="gitHub">
+                        <img class="icon" src="gitHubIcon.png">
+                        <a class="contactsLink" target="_blank" href="https://github.com/redboneskirmish"> github</a>
+                    </p>
+                </li>
+                <li class="contactsListItem">
+                    <p class="stackOverflow">
+                        <img class="icon" src="stackOverflowIcon.png">
+                        <a class="contactsLink" target="_blank" href="https://stackoverflow.com/users/12460774/redboneskirmish"> stack overflow</a>
+                    </p>
+                </li>
+                <li class="contactsListItem">
+                    <p class="soloLearn">
+                        <img class="icon" src="soloLearnIcon.png">
+                        <a class="contactsLink" target="_blank" href="https://www.sololearn.com/profile/16232753"> sololearn</a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <br>
+        <hr style="width:90%">
+        <br>
+    </section>
+
+    <footer id="footer">
+        <br>
+        <br>
+        <p class="footerItem">webpage made with CSS+HTML</p>
+        <div class="footerItem">icons made by <a class="footerLink" href="https://www.flaticon.com/authors/freepik" title="Freepik">freepik</a> from <a class="footerLink" href="https://www.flaticon.com/" title="Flaticon">flaticon.com</a></div>
+        <p class="footerItem">saint petersburg, 2019</p>
+        <br>
+    </footer>
 
 </body>
 
