@@ -3,14 +3,27 @@ body {
     width: 70%;
     background-color: #acc3be;
     text-align: center;
-    font-size: 110%;
-    font-family: sans-serif;
+    font-size: 114%;
+}
+
+.mainSection {
+    background: linear-gradient(45deg, #E9E4F0, #D3CCE3);
+    box-shadow:
+        0px 4.19623px 4.19623px rgba(0, 0, 0, 0.1),
+        0px 8.39245px 8.39245px rgba(0, 0, 0, 0.1),
+        0px 16.7849px 16.7849px rgba(0, 0, 0, 0.1),
+        0px 33.5698px 33.5698px rgba(0, 0, 0, 0.1),
+        0px 67.1396px 67.1396px rgba(0, 0, 0, 0.1),
+        0px 134.279px 134.279px rgba(0, 0, 0, 0.1),
+        0px 268.558px 262.264px rgba(0, 0, 0, 0.1);
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 h1 {
     font-size: 180%;
     color: #037971;
-    font-family: sans-serif;
+    font-family: 'Paytone One';
     font-variant: small-caps;
     margin-top: 1%;
     font-size: 275%;
@@ -20,14 +33,14 @@ h1 {
 
 #h1Addition {
     color: #727878;
-    font-family: sans-serif;
+    font-family: 'Josefin Sans';
     font-variant: small-caps;
     font-size: 21px;
 }
 
 h2 {
     color: #037971;
-    font-family: sans-serif;
+    font-family: 'Francois One';
     font-variant: small-caps;
 }
 
@@ -57,13 +70,9 @@ h2 {
     transform: scale(1.05, 1.05);
 }
 
-.mainSection {
-    background-color: lightgrey;
-}
-
 #sectionEnding {
-    font-family:sans-serif; 
-    font-size:100%;
+    font-family: 'Josefin Sans';
+    font-size:105%;
     color: #100621;
 }
 
@@ -289,6 +298,16 @@ h2 {
     margin-top: 2%;
     margin-bottom: 2%;
     text-align: left;
+    box-shadow:
+        0px 4.19623px 4.19623px rgba(0, 0, 0, 0.1),
+        0px 8.39245px 8.39245px rgba(0, 0, 0, 0.1),
+        0px 16.7849px 16.7849px rgba(0, 0, 0, 0.1),
+        0px 33.5698px 33.5698px rgba(0, 0, 0, 0.1),
+        0px 67.1396px 67.1396px rgba(0, 0, 0, 0.1),
+        0px 134.279px 134.279px rgba(0, 0, 0, 0.1),
+        0px 268.558px 262.264px rgba(0, 0, 0, 0.1);
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .footerItem {
